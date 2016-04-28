@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title></title>
+	<script src="./zepto.min.js"></script>
+    <script src="./l.js"></script>
+    <style>
+    * { margin: 0; padding: 0;}
+    body, .main{ height: 100%;}
+    .main{ overflow-y: auto;}
+    </style>
+</head>
+<body>
+	<div class="main">
+
+		<div style="height:600px;">
+			<img class="img1" data-src="http://img.yaomaiche.com/upload/image/original/carGoods/29ec3d00-5a80-4fc9-980a-35d719852d87.png">
+		</div>
+		<div style="height:3000px; background:yellow;"></div>
+		<div style="height:1000px;">
+			<img class="img2" data-src="http://img.yaomaiche.com/upload/image/original/201510/310135268298.png">
+		</div>
+		<div class="box">
+			<textarea class="data-lazyload">
+				<div style="height:400px; background:red;"></div>
+			</textarea>
+		</div>
+
+	</div>
+</body>
+<script>
+	$(document).ready(function() {
+		$('img').lazyload({threshold: 0});
+	})
+</script>
+</html>
