@@ -4,7 +4,7 @@ $.fn.lazyload = function(options) {
         threshold: 0,
         container: window
     };
-    
+      
     if (options) {
         $.extend(settings,options);
     }
