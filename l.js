@@ -54,7 +54,7 @@ $.fn.lazyload = function(options) {
     }
            
     //延迟图片加载
-    function _lazyLoadImage() {            
+    function _lazyLoadImage() {
         imgs.each(function(){
             var jThis = $(this);             
             if (jThis.attr('data-src') && _intens(this,settings.container)) {
